@@ -1,23 +1,12 @@
-# express-laravel-router
-A Laravel-inspired router for express.js
+Description
+===========
 
-## Motivation
-This router is an alternative to the one that ships with express.js. Instead of manually creating instances of `express.Router`,
-you can define your routes in group closures, where it becomes easier to create and reason about the shared properties of your routes.
-
-Also, this router allows you to execute custom code for each route definition, which can be useful for many things,
-e.g. injecting dependencies into each request handler, or [automatically creating a swagger/openapi spec from your routes](https://github.com/shaunpersad/express-laravel-router/wiki/Swagger-spec-generation-example).
-
-There are also some extra features like being able to name and generate urls strings for each route.
-
-To summarize:
-- Easily create and organize route groups
-- Execute custom code for each route definition
-- Generate urls for a given route definition
+Made a modification to the [express-laravel-router](https://www.npmjs.com/package/express-laravel-router) package to support group inside another group.
+The modified version of [express-laravel-router](https://www.npmjs.com/package/express-laravel-router/v/1.4.1) is 1.4.1
 
 ## Installation
 ```bash
-npm install express-laravel-router --save
+npm install express-laravel-router-group --save
 ```
 
 ## Quickstart
@@ -27,7 +16,7 @@ The below example will create two routes:
 2. A POST to `/api/v1/auth`
 ```js
 const express = require('express');
-const createRouter = require('express-laravel-router').createRouter;
+const createRouter = require('express-laravel-router-group').createRouter;
 
 const app = express();
 const router = createRouter(app);
