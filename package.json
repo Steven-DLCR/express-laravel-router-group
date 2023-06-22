@@ -8,7 +8,8 @@
     "/"
   ],
   "dependencies": {
-    "qs": "^6.5.1"
+    "qs": "^6.5.1",
+    "normalize-path": "^3.0.0"
   },
   "description": "A Laravel-inspired router group for express.js",
   "devDependencies": {
